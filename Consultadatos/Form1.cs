@@ -40,9 +40,10 @@ namespace Consultadatos
                 txb_rdni.Text = respuesta.nombre.ToString();
 
             }
-            catch
+            catch(Exception e)
             {
-                MessageBox.Show("DNI no existe");
+                MessageBox.Show(e.Message);
+                
                 
                 textBox1.Text = "";
                 textBox1.Focus();
